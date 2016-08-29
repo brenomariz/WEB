@@ -1,0 +1,51 @@
+<HTML>
+<HEAD><TITLE>exemplo de CSS</TITLE>
+<meta charset="UTF-8">
+<STYLE type="text/css">
+ul {list-style: none;
+	float: left;
+    }
+ul li {position: relative;
+       display: inline;
+
+	  }
+ul li a {display: inline;
+         background: #444;
+		 color: #fff;
+		 text-decoration: none;
+		 padding: 10px;
+		 transition: all 2s; }
+ul li ul  {display: none;
+		   position: absolute;
+		   left: 10px;
+		   top: 40px;   }
+ul li ul a {position: left;
+			display: block;
+			background:#444;
+			color:#fff;
+			text-decoration: none;
+			left: 30px;
+			padding: 10px;
+			transition: all 2s;
+}
+ul li a:hover {background: #777;}
+ul li:hover ul{display: block;}
+</STYLE>
+</HEAD>
+<BODY>
+	<ul>
+	  <li><a href="#"> Efetua Matriculas </a></li>
+	  <li><a href="#">Cadastros</a>
+	    <ul>
+		  <li><a href="#">Alunos</a></li>
+		  <li><a href="#">Cursos</a></li>
+		  <li><a href="#">Disciplinas</a></li>
+	    </ul>
+	  </li>
+      <li><a href="#">Emite Carteira</a>
+	  <li><a href="#">Fim</a>	
+	</ul>	
+	   
+
+</BODY>
+</HTML>
