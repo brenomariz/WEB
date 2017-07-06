@@ -1,0 +1,112 @@
+<head>
+	
+	<meta charset="utf-8">
+	
+	<style>
+		#quadrado{
+			border: 5px solid black;
+			width: 500px;
+			height: 300px;
+			text-align: center;
+			background-color: #e0e0d1;
+			margin: 0 auto;
+
+		}
+
+		table td {
+			border: 2px solid black;
+			text-align: center;
+			padding: 20px;
+		}
+
+		body {
+			text-align: center;
+			align-items: center;
+			background: url(https://images.unsplash.com/photo-1458400411386-5ae465c4e57e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=47756f965e991bf72aa756b410929b04) no-repeat center ;
+			background-size: cover;
+
+		}
+
+		p {
+			font-size: 20px;
+		}
+			
+	</style>
+
+	<script type="text/javascript">
+
+		
+		window.onload = function() {
+			function bleftradius () {
+				document.getElementById("quadrado").style.borderBottomLeftRadius = "25px";
+			}
+			function brightradius () {
+				document.getElementById("quadrado").style.borderBottomRightRadius = "25px";
+			}
+			function borderstyle () {
+				document.getElementById("quadrado").style.borderBottomStyle = "dashed";
+			}
+			function bottomwidth () {
+				document.getElementById("quadrado").style.borderBottomWidth = "10px";
+			}
+			function bordercollapse () {
+	    		document.getElementById("tabela").style.borderCollapse = "Collapse";
+			}
+
+			
+
+			document.getElementById("ex1").addEventListener("click", function () {
+				bleftradius();
+			})
+
+			document.getElementById("ex2").addEventListener("click", function () {
+				brightradius();
+			})
+			document.getElementById("ex3").addEventListener("click", function () {
+				borderstyle();
+			})
+			document.getElementById("ex4").addEventListener("click", function () {
+				bottomwidth();
+			})
+			document.getElementById("ex5").addEventListener("click", function () {
+				bordercollapse();
+			})
+		}
+
+	</script>
+	
+</head>
+
+<body>
+	
+	<h7> Breno Augusto Cardoso Mariz - INF 2A</h7> <br> <br>
+	<div id="quadrado">
+		<center>
+		<table id="tabela">
+			<tr>
+				<th> Disciplina </th> <th> Professor </th>
+			</tr>
+			<tr>
+				<td> Aplicação para WEB </td> <td> Willian Sallum </td>
+			</tr>
+			<tr>
+				<td> JAVA </td> <td> José Wilson </td>
+			</tr>
+			<tr>
+				<td> Sistemas Digitais </td> <td> Fabrício Vivas </td>
+			</tr>
+			<tr>
+				<td> Manutenção de computadores </td> <td> Francisco Temponi </td>
+			</tr>
+		</table>
+		</center>	
+	</div>
+
+	<h1>Clique nos botões abaixo para ver o funcionamento de cada evento: </h1>
+	<p> Clique no botão abaixo e observe a mudança no canto esquerdo da borda inferior do retângulo: <br> <br> <input type="button" id="ex1" value="Border Bottom Left Radius">  </p>
+	<p> Clique no botão abaixo e observa a mudança no canto direito da borda inferior do retângulo: <br> <br> <input type="button" id="ex2" value="Border Bottom Right Radius">  </p>
+	<p> Clique no botão abaixo e note a mudança de estilo da borda inferior do retângulo:  <br> <br> <input type="button" id="ex3" value="Border Bottom Style"> </p>
+	<p> Clique no botão abaixo e note a mudança de altura na borda inferior do retângulo:  <br> <br> <input type="button" id="ex4" value="Border Bottom Width"> </p>
+	<p> Clique no botão abaixo e note a mudança na tabela dentro do retângulo:  <br> <br> <input type="button" id="ex5" value="Border Collapse"> </p>
+
+</body>
